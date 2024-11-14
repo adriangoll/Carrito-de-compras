@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <header>
+        <div class="text-xl font-bold ">MI CARRITO</div>
+        <button class="cerrar " id="abrir_menu">☰</button>
+        
+        <nav class="nav">
+            <button class="abrir" id="cerrar_menu">✖</button>
+            <ul class="nav-list">
+                <li><a href="crud.html">CRUD</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="ingreso.html">Ingresar</a></li>
+                <li><a href="sitio-web.html">Volver al sitio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="flex justify-center m-4" id="container">
+        <div class="flex justify-between w-1/2" id="tamaño-carrito">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Imagen</td>
+                        <td>Producto</td>
+                        <td>cantidad</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody id="carrito">
+                </tbody>
+            </table>
+            <div>
+                <div>Total</div>
+                <div id="total"></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/src/script/carrito.js" ></script>
+    <script src="/src/script/estilos.js"></script>
+</body>
+</html>
