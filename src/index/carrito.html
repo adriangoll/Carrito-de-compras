@@ -22,22 +22,22 @@
         </nav>
     </header>
     <section class="flex justify-center m-4" id="container">
-        <div class="flex justify-between w-1/2" id="tamaño-carrito">
-            <table>
-                <thead>
+        <div class="flex justify-between w-3/4 p-4 bg-white rounded-lg shadow-md" id="tamaño-carrito">
+            <table class=" w-3/4 text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                        <td>Imagen</td>
-                        <td>Producto</td>
-                        <td>cantidad</td>
-                        <td>Subtotal</td>
+                        <th class="px-6 py-3">Imagen</th>
+                        <th class="px-6 py-3">Producto</th>
+                        <th class="px-6 py-3">Cantidad</th>
+                        <th class="px-6 py-3">Subtotal</th>
+                        <th class="px-6 py-3">Acción</th>
                     </tr>
                 </thead>
-                <tbody id="carrito">
-                </tbody>
+                <tbody id="carrito"></tbody>
             </table>
-            <div>
-                <div>Total</div>
-                <div id="total"></div>
+            <div class="flex flex-col justify-between ml-4">
+                <div class="text-xl font-semibold">Total</div>
+                <div id="total" class="text-lg font-medium text-gray-900 mt-2"></div>
             </div>
         </div>
     </section>
