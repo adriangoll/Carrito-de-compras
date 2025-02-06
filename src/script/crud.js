@@ -46,7 +46,7 @@ const mostrarTodo = ()=>{
                 <td class="px-4 py-2 font-medium text-black">${element.nombre}</td>
                 <td class="px-4 py-2 font-semibold text-black">$${element.precio}</td>
                 <td class="flex justify-center space-x-4 py-4">
-                    <button class="eliminar bg-blue-500 hover:bg-blue-800 text-white font-semibold py-1 px-3 rounded" type="button" data-index="${index}">Eliminar</button>
+                    <button class="eliminar bg-red-500 hover:bg-red-800 text-white font-semibold py-1 px-3 rounded" type="button" data-index="${index}">Eliminar</button>
                     <button class="editar bg-blue-500 hover:bg-blue-800 text-white font-semibold py-1 px-3 rounded" type="button" data-index="${index}">Editar</button>
                 </td>
             </tr>
@@ -82,9 +82,13 @@ const mostrarTodo = ()=>{
         pantallaModificar.innerHTML = `
         <h1 class="text-2xl text-center font-bold text-blue-700 mb-6">Modificación de Producto</h1>
         <div class="flex flex-col items-center space-y-4">
+            <label>Link Imagen</label>
             <input class="border rounded bg-blue-100 px-3 py-2 w-full max-w-md" value="${productoEditar.linkImagen}" id="linkModificado" type="text" required>
+            <label>Nombre</label>
             <input class="border rounded bg-blue-100 px-3 py-2 w-full max-w-md" value="${productoEditar.nombre}" id="nombreModificado" type="text" required>
+            <label>Codigo</label>
             <input class="border rounded bg-blue-100 px-3 py-2 w-full max-w-md" value="${productoEditar.codigo}" id="codigoModificado" type="text" required>
+            <label>Precio</label>
             <input class="border rounded bg-blue-100 px-3 py-2 w-full max-w-md" value="${productoEditar.precio}" id="precioModificado" type="text" required>
             <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="button" id="modificar">Confirmar Modificación</button>
         </div>
